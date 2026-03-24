@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeHomes - Venta de Casas y Bienes Raíces</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> Luxe<span>Homes</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#destacadas">Propiedades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto" class="btn btn-outline" style="border-width: 1px; padding: 0.5rem 1rem;">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-up-1">Encuentra el Hogar de tus Sueños</h1>
+            <p class="fade-up-2">Descubre propiedades exclusivas en las mejores ubicaciones con diseños modernos y elegantes.</p>
+            
+            <!-- Buscador Glassmorphism -->
+            <div class="search-box fade-up-3">
+                <form class="search-form">
+                    <div class="input-group">
+                        <label>Ubicación</label>
+                        <input type="text" placeholder="Ej. Mexicali, Condesa...">
+                    </div>
+                    <div class="input-group">
+                        <label>Tipo de Propiedad</label>
+                        <select>
+                            <option>Casa</option>
+                            <option>Departamento</option>
+                            <option>Terreno</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Rango de Precio</label>
+                        <select>
+                            <option>Cualquier precio</option>
+                            <option>$1M - $3M MXN</option>
+                            <option>$3M - $5M MXN</option>
+                            <option>+$5M MXN</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-search"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Propiedades Destacadas -->
+    <section id="destacadas" class="properties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Propiedades <span>Destacadas</span></h2>
+                <p>Explora nuestras mejores ofertas del mes, seleccionadas exclusivamente para ti.</p>
+            </div>
+            
+            <div class="property-grid">
+                <!-- Propiedad 1 -->
+                <div class="property-card fade-in">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casa Moderna">
+                        <div class="badge">Destacada</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Villa Moderna en Residencial</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> La Jolla, San Diego</p>
+                        <p class="price">$5,200,000 MXN</p>
+                        <ul class="features">
+                            <li><i class="fa-solid fa-bed"></i> 4 Hab</li>
+                            <li><i class="fa-solid fa-bath"></i> 3 Baños</li>
+                            <li><i class="fa-solid fa-ruler-combined"></i> 250 m²</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary w-100">Ver Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Propiedad 2 -->
+                <div class="property-card fade-in" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casa con alberca">
+                        <div class="badge badge-new">Nueva</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Casa de Lujo con Alberca</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Zona Dorada, Mexicali</p>
+                        <p class="price">$4,850,000 MXN</p>
+                        <ul class="features">
+                            <li><i class="fa-solid fa-bed"></i> 3 Hab</li>
+                            <li><i class="fa-solid fa-bath"></i> 2.5 Baños</li>
+                            <li><i class="fa-solid fa-ruler-combined"></i> 210 m²</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary w-100">Ver Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Propiedad 3 -->
+                <div class="property-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Departamento">
+                    </div>
+                    <div class="card-body">
+                        <h3>Penthouse Exclusivo</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Polanco, CDMX</p>
+                        <p class="price">$8,900,000 MXN</p>
+                        <ul class="features">
+                            <li><i class="fa-solid fa-bed"></i> 2 Hab</li>
+                            <li><i class="fa-solid fa-bath"></i> 2 Baños</li>
+                            <li><i class="fa-solid fa-ruler-combined"></i> 180 m²</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary w-100">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-primary">Ver todas las propiedades</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué nosotros -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-content fade-in">
+                    <h2>¿Por qué elegir <span>LuxeHomes</span>?</h2>
+                    <p>Nos dedicamos a hacer que el proceso de compra de tu nuevo hogar sea transparente, rápido y 100% seguro. Contamos con años de experiencia en el mercado inmobiliario.</p>
+                    <ul class="benefits">
+                        <li><i class="fa-solid fa-circle-check"></i> Asesoría legal y financiera gratuita.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Catálogo de propiedades verificado.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Agentes especializados disponibles 24/7.</li>
+                    </ul>
+                    <button class="btn btn-primary" style="margin-top: 1rem;">Conoce más de nosotros</button>
+                </div>
+                <div class="service-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Agente mostrando llaves">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo text-light" style="margin-bottom: 1rem;">
+                    <i class="fa-solid fa-house-chimney"></i> Luxe<span>Homes</span>
+                </a>
+                <p>Tu aliado estratégico para encontrar el hogar perfecto. Confianza, calidad y exclusividad a tu medida.</p>
+                <div class="social-icons" style="margin-top: 1.5rem;">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destacadas">Propiedades</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#">Blog Inmobiliario</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="tel:+526862417536"><i class="fa-solid fa-phone"></i> +52 (686) 241 7536</a></li>
+                    <li><a href="mailto:contacto@luxehomes.com"><i class="fa-solid fa-envelope"></i> contacto@luxehomes.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Blvd. Benito Juárez 1234, Mexicali, BC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LuxeHomes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
